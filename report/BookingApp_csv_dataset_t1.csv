@@ -1,0 +1,7 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1733583856747,6155,auth,200,OK,Thread Group 1-1,text,true,,776,254,1,1,https://restful-booker.herokuapp.com/auth,6154,0,3749
+1733583862984,343,createbooking,200,OK,Thread Group 1-1,text,true,,942,462,1,1,https://restful-booker.herokuapp.com/booking,343,0,0
+1733583863332,321,getbooking,200,OK,Thread Group 1-1,text,true,,913,469,1,1,https://restful-booker.herokuapp.com/booking/1774,321,0,0
+1733583863658,330,UpdateBookingByPut,200,OK,Thread Group 1-1,text,true,,923,505,1,1,https://restful-booker.herokuapp.com/booking/1774,330,0,0
+1733583863993,335,UpdateBookingByPatch,200,OK,Thread Group 1-1,text,true,,939,341,1,1,https://restful-booker.herokuapp.com/booking/1774,335,0,0
+1733583864331,345,getbooking,200,OK,Thread Group 1-1,text,true,,939,469,1,1,https://restful-booker.herokuapp.com/booking/1774,345,0,0
