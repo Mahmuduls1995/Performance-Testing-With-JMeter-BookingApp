@@ -181,11 +181,61 @@ I have adjusted the thread group to have 1, 100, 500, 1000, 2000 concurrent user
   jmeter -n -t  BookingApp_csv_dataset_t1.jmx -l   report\BookingApp_csv_dataset_t1.csv
 ```   
 
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1733583856747,6155,auth,200,OK,Thread Group 1-1,text,true,,776,254,1,1,https://restful-booker.herokuapp.com/auth,6154,0,3749
-1733583862984,343,createbooking,200,OK,Thread Group 1-1,text,true,,942,462,1,1,https://restful-booker.herokuapp.com/booking,343,0,0
-1733583863332,321,getbooking,200,OK,Thread Group 1-1,text,true,,913,469,1,1,https://restful-booker.herokuapp.com/booking/1774,321,0,0
-1733583863658,330,UpdateBookingByPut,200,OK,Thread Group 1-1,text,true,,923,505,1,1,https://restful-booker.herokuapp.com/booking/1774,330,0,0
-1733583863993,335,UpdateBookingByPatch,200,OK,Thread Group 1-1,text,true,,939,341,1,1,https://restful-booker.herokuapp.com/booking/1774,335,0,0
-1733583864331,345,getbooking,200,OK,Thread Group 1-1,text,true,,939,469,1,1,https://restful-booker.herokuapp.com/booking/1774,345,0,0
+![BookingApp_t1_csv](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/CSV%20DataFile/BookingApp_csv_dataset_t1_CSV%20-Result.png)
+
+
+## Make jtl file
+
+```bash
+  jmeter -n -t  BookingApp_csv_dataset_t1.jmx -l BookingAppLoadTesting\report\BookingApp_csv_dataset_t1.jtl
+```      
+  Then continue to upgrade Threads( 1, 100, 500, 1000, 2000 ) by keeping Ramp-up-Period Same.   
+   
+![BookingApp_t1_jtl](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/Jtl%20file%20Commant%20-SS.png)
+  
+ 
+![BookingApp_allJTLs](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/All%20Jtl%20file.png)
+
+After completing this command  
+
+## Make html file   
+  
+  ```bash
+  jmeter -g BookingAppLoadTesting\report\BookingApp_csv_dataset_t1.jtl -o report\BookingApp_csv_dataset_t1.html
+```
+
+- **g**: jtl results file
+
+- **o**: path to output folder
+
+![BookingApp_t1_csv_cmd](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/jtl%20file%20to%20html%20file%20command.png)
+  
+  
+![BookingApp_reports](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/Html-Folder-htmlk-link.png)
+
+## HTML Report
+
+**Number of Threads 1 ; Ramp-Up Period: 10s**
+
+![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t1-html-report.png)
+
+
+**Number of Threads 100 ; Ramp-Up Period 10s**
+
+![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t100-html-report.png)
+
+
+**Number of Threads 500 ; Ramp-Up Period 10s**
+   
+![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t_500-html-report.png)
+
+
+**Number of Threads 1000 ; Ramp-Up Period 10s**
+   
+![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t1000-html-report%20(2).png)
+
+
+**Number of Threads 2000 ; Ramp-Up Period 10s**
+   
+![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t2000-html-report.png)
 
