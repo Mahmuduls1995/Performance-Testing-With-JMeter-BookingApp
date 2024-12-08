@@ -215,27 +215,40 @@ After completing this command
 
 ## HTML Report
 
-**Number of Threads 1 ; Ramp-Up Period: 10s**
+### **Number of Threads 1 ; Ramp-Up Period: 10s**
 
 ![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t1-html-report.png)
 
 
-**Number of Threads 100 ; Ramp-Up Period 10s**
+### **Number of Threads 100 ; Ramp-Up Period 10s**
 
 ![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t100-html-report.png)
 
 
-**Number of Threads 500 ; Ramp-Up Period 10s**
+### **Number of Threads 500 ; Ramp-Up Period 10s**
    
 ![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t_500-html-report.png)
 
 
-**Number of Threads 1000 ; Ramp-Up Period 10s**
+### **Number of Threads 1000 ; Ramp-Up Period 10s**
    
 ![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t1000-html-report%20(2).png)
 
 
-**Number of Threads 2000 ; Ramp-Up Period 10s**
+### **Number of Threads 2000 ; Ramp-Up Period 10s**
    
 ![BookingApp_t1_100pass & Report](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/jtl-html-command-Ss/t2000-html-report.png)
 
+## Transaction Per Second
+
+### Transaction Per Second **Number of Threads 2000 ; Ramp-Up Period 10s**
+   
+![BookingApp_t2000_tps](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t200_total_transaction-per-second.png)
+
+### Response Time Percentiles **Number of Threads 2000 ; Ramp-Up Period 10s**
+   
+![BookingApp_t2000_tps](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t2000-response-time-persentiles.png)
+
+### Response Time Overview **Number of Threads 2000 ; Ramp-Up Period 10s**
+   
+![BookingApp_t2000_tps](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t2000-response-time%20overview.png)
