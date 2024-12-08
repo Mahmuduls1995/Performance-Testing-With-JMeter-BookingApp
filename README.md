@@ -130,5 +130,22 @@ I have adjusted the thread group to have 1, 100, 500, 1000, 2000 concurrent user
 
 ## Read Test Data from CSV file in Jmeter    
 
-- Create a CSV file in the test suite folder and add test data to it.<br>
+- Create a CSV file in the test suite folder and add test data to it.
+
 ![createCSV](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/CSV%20DataFile/newuser-CSV-Data.png)
+- Add a Config Element CSV Data Set Config in Jmeter.
+
+![configCSV](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/CSV%20Data%20Config%20and%20Passed%20Screenshot/CSV%20Data%20Set%20Config.png)
+
+- Configure ' CSV Data Set Config ' based on the need such as providing path of CSV file and variable names and other configs. 
+
+![readCSV](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/CSV%20Data%20Config%20and%20Passed%20Screenshot/CSV%20File%20to%20Set%20Variable.png)
+
+![readCSV](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/CSV%20Data%20Config%20and%20Passed%20Screenshot/Newuser-Data%20-Set-From-CSV-File.png)
+
+- Run the test to see if data from the CSV file is read and populated in the results.  <br/>
+
+## Test execution from GUI
+ 
+- JMeter should be initialized in GUI mode.
+- Click on Run Button.
