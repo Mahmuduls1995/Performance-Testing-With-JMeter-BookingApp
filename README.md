@@ -53,8 +53,38 @@ Click =>Binaries
 - HTTP Request Default (Configuration Element)
 - HTTP Request (Sampler)
 - Summary Report (Listener)
-## Test Plan
-Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on the jMeter version you are using)
+## Creating a Test Plan
+The first step in using JMeter is to create a Test Plan. A Test Plan is a collection of elements that define the test scenarios and their configurations. To create a Test Plan, you need to follow these steps:
+
+![testPlan](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/opening-Jmx-File.png)
+
+1. Right-click on the Test Plan in the tree view on the left-hand side of the JMeter interface.
+
+2. Select Add > Threads (Users) > Thread Group.
+
+3. In the Thread Group panel, you can set the number of threads (users) to simulate, the ramp-up period, and the loop count.
+
+4. Next, you need to add a Sampler element to the Thread Group. A Sampler is used to simulate a request to the server under test. To add a Sampler, right-click on the Thread Group, select Add > Sampler, and then choose the appropriate Sampler type (e.g., HTTP Request, JDBC Request, etc.)
+
+![testPlan](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/opening-Jmx-File.png)
+5. In the Sampler panel, you can configure the parameters of the request (e.g., URL, method, parameters, etc.)
+2_.png
+
+6. Finally, you can add a Listener element to the Thread Group to view the test results. A Listener displays the test results in various formats such as tables, graphs, and charts. To add a Listener, right-click on the Thread Group, select Add > Listener, and then choose the appropriate Listener type (e.g., Summary Report, Graph Results, etc.).
+3_png
+
+## Running The Test
+Once you have created the Test Plan, you can run the test by clicking on the green arrow in the toolbar. JMeter will start sending requests to the server under test, and you can view the test results in the Listener.
+
+Try Now
+In this tutorial, we’ll go over how to set up a basic load test using JMeter to test the [https://restful-booker.herokuapp.com/booking](https://restful-booker.herokuapp.com/booking) API.
+Set up the restful-booker.herokuapp.com/booking key by signing up to the above website. Then provide the API request details to the JMeter test plan.
+4.pmg
+After running the load test, you can view the responses and check the number of requests as well.
+5_png
+I have adjusted the thread group to have 1, 100, 500, 1000, 2000 concurrent users and do a load test.
+6_png
+
 - Name: Users
 - Number of Threads (users): 1, 100, 500, 1000, 2000
 - Ramp-Up Period (in seconds): 10
@@ -68,4 +98,18 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
 
   4) The HTTP Header Manager, which allows you to provide the Request Headers that will be utilized by the upcoming HTTP Requests, is the first item in Thread Groups.
 
+# Collection of API
 
+### List of API 
+
+  - For creating Booking: [https://restful-booker.herokuapp.com/booking](https://restful-booker.herokuapp.com/booking)
+  - For getting, updating, deleting  Booking: [https://restful-booker.herokuapp.com/booking/id](https://restful-booker.herokuapp.com/booking/1)
+
+### Load the JMeter Script 
+   - File > Open (CTRL + O)
+   - Locate the "BookingApp_csv_dataset_t1.jmx" file contained on this repo
+   - Continue open BookingApp_csv_dataset_t1 to BookingApp_csv_dataset_t2000
+   - Open those file
+   - The Test Plan will be loaded  
+   
+   ![testPlan](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/opening-Jmx-File.png)
