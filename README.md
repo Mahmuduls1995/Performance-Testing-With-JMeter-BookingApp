@@ -149,3 +149,43 @@ I have adjusted the thread group to have 1, 100, 500, 1000, 2000 concurrent user
  
 - JMeter should be initialized in GUI mode.
 - Click on Run Button.
+
+![run](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/Run%20Button%20SS.png)
+
+- Check Different Types of Report.
+
+    Summary and Aggregate  Report for  **Number of Threads 1 ; Ramp-Up Period 10s**
+   
+    Summary  Report           |  Aggregate  Report
+    :-------------------------:|:-------------------------:
+    ![BookingApp_t1_summary](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t1-Summary%20report.png)  |  ![BookingApp_t1_agg](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t1-Aggregate-report.png)
+
+    Aggregate  Report for  **Number of Threads 2000 ; Ramp-Up Period 10s**
+    Aggregate  Report
+    :-------------------------:|
+    ![BookingApp_t2000_summary](https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp/blob/main/Project%20Screenshot/t2000_Summary.png)
+
+## Test execution from the Terminal
+ 
+- JMeter should be initialized in non-GUI mode.
+- Make a report folder in the **bin** folder.  
+- Run Command in __jmeter\bin__ folder. 
+
+ ### Make csv file    
+ 
+   - **n**: non GUI mode
+  - **t**: test plan to execute
+  - **l**: output file with results   
+
+```bash
+  jmeter -n -t  BookingApp_csv_dataset_t1.jmx -l   report\BookingApp_csv_dataset_t1.csv
+```   
+
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1733583856747,6155,auth,200,OK,Thread Group 1-1,text,true,,776,254,1,1,https://restful-booker.herokuapp.com/auth,6154,0,3749
+1733583862984,343,createbooking,200,OK,Thread Group 1-1,text,true,,942,462,1,1,https://restful-booker.herokuapp.com/booking,343,0,0
+1733583863332,321,getbooking,200,OK,Thread Group 1-1,text,true,,913,469,1,1,https://restful-booker.herokuapp.com/booking/1774,321,0,0
+1733583863658,330,UpdateBookingByPut,200,OK,Thread Group 1-1,text,true,,923,505,1,1,https://restful-booker.herokuapp.com/booking/1774,330,0,0
+1733583863993,335,UpdateBookingByPatch,200,OK,Thread Group 1-1,text,true,,939,341,1,1,https://restful-booker.herokuapp.com/booking/1774,335,0,0
+1733583864331,345,getbooking,200,OK,Thread Group 1-1,text,true,,939,469,1,1,https://restful-booker.herokuapp.com/booking/1774,345,0,0
+
